@@ -16,18 +16,22 @@ function init () {
 	document.getElementById('a1').style.backgroundImage = "url(" + siteLocation + 'images/Rhythm0.jpg)';
 	document.getElementById('a2').style.backgroundImage = "url(" + siteLocation + 'images/Rhythm4.jpg)';
 	document.getElementById('a3').style.backgroundImage = "url(" + siteLocation + 'images/Rhythm5.jpg)';
+	document.getElementById('a4').style.backgroundImage = "url(" + siteLocation + 'images/freeing.jpg)';
 
 	addEvent(document.getElementById('a1'), 'click', showAsLarge);
 	addEvent(document.getElementById('a2'), 'click', showAsLarge);
 	addEvent(document.getElementById('a3'), 'click', showAsLarge);
+	addEvent(document.getElementById('a4'), 'click', showAsLarge);
 
 	addEvent(document.getElementById('a1'), 'mouseover', showBorder);
 	addEvent(document.getElementById('a2'), 'mouseover', showBorder);
 	addEvent(document.getElementById('a3'), 'mouseover', showBorder);
+	addEvent(document.getElementById('a4'), 'mouseover', showBorder);
 
 	addEvent(document.getElementById('a1'), 'mouseout', hideBorder);
 	addEvent(document.getElementById('a2'), 'mouseout', hideBorder);
 	addEvent(document.getElementById('a3'), 'mouseout', hideBorder);
+	addEvent(document.getElementById('a4'), 'mouseout', hideBorder);
 
 	reflectCode();
 

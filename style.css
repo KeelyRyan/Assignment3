@@ -10,7 +10,7 @@
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #6495ED;
-    background-color:#00008B;
+    background-color:navy;
 }
 .navbar-inverse .navbar-brand {
     color:#F0F8FF;
@@ -30,7 +30,11 @@ body {
 	font-family: Arial, Helvetica, san-serif;
 	cursor: default;
 }
+h3{
+color:#6495ED;
+border-bottom: 2px solid navy;
 
+}
 
 
 
