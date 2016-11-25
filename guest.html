@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IMMA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>  </head>
+  <body>
+    <div class="container">
+<!--Navigation--->
+      <nav class="navbar navbar-inverse">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">IMMA.ie</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plan Your Visit<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">P</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                  <li><a href="#">Page 1-3</a></li>
+                </ul>
+              </li>
+              <li><a href="exhibitions.html">Exhibitions</a></li>
+              <li><a href="about.html">About IMMA</a></li>
+              <li><a href="collection.html">Collection</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="active"><a href="#">Guest Book</a></li>
+            </ul>
+          </div>
+          </nav>
+
+
+<!--Form--->
+ <div class="row">
+   <div class="col-md-6" id='Thankyou'>
+Thank you for visiting imma.ie, please sign our guest book.
+   </div>
+
+<form class="col-md-6" id='localStorageForm'>
+  <div class="form-group">
+    <label for='Name'>Name:</label>
+    <input type='text' name='Name' class="form-control" id='Name' placeholder='Enter your name...'>
+  </div>
+  <div class="form-group">
+    <label for='email'>E-mail:</label>
+    <input type='text' name='email' class="form-control" id='email' placeholder='Enter your e-mail address...'>
+  </div>
+  <button type='button' form='localStorageForm' class="btn btn-primary" id='formButton'>Submit Information</button>
+</form>
+
+</div>
+    <!--Exhibition photos-->
+    <div class="row">
+     <div class="col-md-4 1-xs">
+       <div class="thumbnail">
+         <a href="images/jaki.jpg">
+           <img src="images/jaki.jpg" alt="Irivine" style="width:100%">
+           <div class="caption">
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4 1-xs">
+       <div class="thumbnail">
+         <a href="images\strain.jpg">
+           <img src="images\strain.jpg" alt="Strain" style="width:100%">
+           <div class="caption">
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4 1-xs">
+       <div class="thumbnail">
+         <a href="images/Freud.jpg">
+           <img src="images/Freud.jpg" alt="Freud" style="width:100%">
+           <div class="caption">
+           </div>
+         </a>
+       </div>
+     </div>
+   </div>
+
+
+
+
+          <footer style="background-color:#6495ED"><ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+                </ol>
+          <center>Irish Museum of Modern Art, Royal Hospital, Kilmainham, Dublin 8, D08 FW31, Ireland
+           Tel: +353-1-6129900, Email: info@imma.ie</center>
+          </footer>
+
+              </div>
+
+              <script type="text/javascript" src="scripts.js"></script>
+            </body>
+          </html>
