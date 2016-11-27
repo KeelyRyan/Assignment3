@@ -13,7 +13,7 @@ function init () {
 
 	console.log('Site Location: ' + siteLocation);
 
-	document.getElementById('a1').style.backgroundImage = "url(" + siteLocation + 'images/Rhythm0.jpg)';
+	document.getElementById('a1').style.backgroundImage = "url(" + siteLocation + 'imagesRhythm0.jpg)';
 	document.getElementById('a2').style.backgroundImage = "url(" + siteLocation + 'images/Rhythm4.jpg)';
 	document.getElementById('a3').style.backgroundImage = "url(" + siteLocation + 'images/Rhythm5.jpg)';
 	document.getElementById('a4').style.backgroundImage = "url(" + siteLocation + 'images/freeing.jpg)';
@@ -110,7 +110,6 @@ function reflectCode(){
 	   $('#codeExample').text(data);
 	}, 'text');
 }
-
 //localStorage
 window.onload = initJS;
 function initJS () {
