@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>  </head>
   <body>
     <div class="container">
-<!--Navigation--->
+<!--Navigation-->
       <nav class="navbar navbar-inverse">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -43,15 +43,15 @@
           </nav>
 
 
-<!--SVG--->
+<!--SVG-->
  <div class="row">
    <div class="col-md-4" id='Thankyou'>
 <p>Thank you for visiting imma.ie, please sign our guest book.</P>
 <svg width="200" height="250" >
  <g>
-  <rect fill="#fff" id="canvas_background" height="252" width="202" y="-1" x="-1"/>
-  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  <rect fill="#fff" id="canvas_background" height="252" width="202"/>
+  <g display="none" overflow="visible" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
@@ -62,7 +62,7 @@
  </g>
 </svg>
    </div>
-<!--Form--->
+<!--Form-->
 <form class="col-md-8" id='GuestBookForm'>
   <div class="form-group">
     <label for='Name'>Name:</label>
@@ -72,7 +72,7 @@
     <label for='email'>E-mail:</label>
     <input type='text' name='email' class="form-control" id='email' placeholder='Enter your e-mail address...'>
   </div>
-  <button type='button' form='GuestBForm' class="btn btn-primary" id='formButton'>Submit Information</button>
+  <button type='button' class="btn btn-primary" id='formButton'>Submit Information</button>
 </form>
 
 </div>
