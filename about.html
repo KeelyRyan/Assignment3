@@ -9,7 +9,9 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css"/>  </head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
   <body>
     <div class="container">
 <!--Navigation--->
@@ -41,7 +43,31 @@
             </ul>
           </div>
           </nav>
-
+          <!--Canvas full name-->
+          <div class='row'>
+            <div class="col-md-1 hidden-xs">
+              <canvas id="rectangles"></canvas>
+                 <script type="text/javascript">
+                     var canvas=document.getElementById('rectangles');
+                     var ctx=canvas.getContext('2d');
+                     ctx.fillStyle='#6495ED';
+                     ctx.fillRect(35,10,15,15);
+                     ctx.fillStyle='#4169E1';
+                     ctx.fillRect(40,15,15,15);
+                     ctx.fillStyle='#0000CD';
+                     ctx.fillRect(45,20,15,15);
+                     ctx.fillStyle='#191970';
+                     ctx.fillRect(50,25,15,15);
+                 </script>
+            </div>
+              <div class="col-md-9">
+                <h4>Irish Museum of Modern Art</h4>
+              </div>
+           <div class="col-md-2">
+             <a href="http://www.facebook.com/IrishMuseumofModernArt"><i class= "fa fa-facebook-square" style=font-size:20px;color:lightblue;text-shadow:2px 2px 4px #000000></i></a>
+             <a href="https://twitter.com/IMMAIreland"><i class="	fa fa-twitter" style=font-size:20px;color:lightblue;text-shadow:2px 2px 4px #000000></i></a>
+           </div>
+           </div>
 
 
           <footer style="background-color:#6495ED" id='footer'><ol class="breadcrumb">
