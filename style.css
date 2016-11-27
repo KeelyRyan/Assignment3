@@ -16,6 +16,7 @@
     color:#F0F8FF;
 }
 .breadcrumb {
+  text-align: left;
     background-color:#F0F8FF;
 }
 
@@ -38,8 +39,10 @@ border-bottom: 2px solid navy;
 
 
 footer{
-	text-align: right;
+text-align: center;
+	font-family: Arial, Helvetica, san-serif;
 }
+
 
 img{
 
