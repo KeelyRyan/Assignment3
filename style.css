@@ -53,7 +53,11 @@ img{
 	width: 100%;
 }
 
-
+#socialmedia{
+font-size:20px;
+color:lightblue;
+text-shadow:2px 2px 4px #000000
+}
 #container {
 	width: 960px;
 	background-color: #172CAF;
