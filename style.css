@@ -17,7 +17,8 @@
 }
 .breadcrumb {
   text-align: left;
-    background-color:#FFFFFF;
+    background-color:#F0F8FF;
+
 }
 
 #captions{
@@ -28,8 +29,8 @@
 body {
 	background-color: white;
 	color: #000000;
-font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1.5em;
+	font-family: Arial, Helvetica, san-serif;
+	cursor: default;
 }
 h3{
 color:#6495ED;
@@ -37,15 +38,17 @@ border-bottom: 2px solid navy;
 
 }
 h4{
-color:navy;
-font-family: 'Sumana', serif;
-}
+color:#6495ED;
 
+}
 
 
 footer{
 text-align: center;
 	font-family: Arial, Helvetica, san-serif;
+border-top: 2px;
+  border: 2px;
+  border-color: navy;
 }
 
 
