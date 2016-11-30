@@ -13,42 +13,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Sumana" rel="stylesheet">
   </head>
-  <body>
+  <body onload="check()">
 
     <div class="container">
       <!--Cookie Warning -->
-      <script type="text/javascript">
-      function getCookie(cname) {
-          var name = cname + "=";
-          var ca = document.cookie.split(';');
-          for(var i = 0; i < ca.length; i++) {
-              var c = ca[i];
-              while (c.charAt(0) == ' ') {
-                  c = c.substring(1);
-              }
-              if (c.indexOf(name) == 0) {
-                  return c.substring(name.length, c.length);
-              }
-          }
-          return "";
-      }
+      <div class="alert alert-info" id="Consent">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" id="close">×</a>
+        <strong>Cookie Consent</strong> This site contains cookies, by continuing you are consenting to the use of cookies.
+      </div>
 
-      function checkCookie() {
-          var user=getCookie("username");
-          if (user != "") {
-              alert("Welcome again " + user);
-          } else {
-             user = prompt("Please enter your name:","");
-             if (user != "" && user != null) {
-                 setCookie("username", user, 30);
-             }
-          }
-      }
-      </script>
-    <div class="alert alert-info alert-dismissable" id="cookie">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-      <strong>Cookie Consent</strong> This site contains cookies, by continuing you are consenting to the use of cookies.
-    </div>
 <!--Navigation-->
       <nav class="navbar navbar-inverse">
           <div class="navbar-header">
@@ -261,9 +234,9 @@
     <p>Irish Museum of Modern Art, Royal Hospital, Kilmainham, Dublin 8, D08 FW31, Ireland
      Tel: +353-1-6129900, Email: info@imma.ie</p>&copy; k00223358
     </footer>
-
         </div>
 
-        <script type="text/javascript" src="scripts.js"></script>
-      </body onload="checkCookie()">
+
+<script type="text/javascript" src="scripts.js"></script>
+      </body>
     </html>
