@@ -82,10 +82,10 @@ function reflectCode(){
 }
 
 //cookie
-function setCookie(cname,cvalue,exdays) {
+function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
+    var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -105,13 +105,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    var user=getCookie("username");
+    var user = getCookie("username");
     if (user != "") {
         alert("Welcome again " + user);
     } else {
-       user = prompt("Please enter your name:","");
-       if (user != "" && user != null) {
-           setCookie("username", user, 30);
-       }
+        user = prompt("Please enter your name:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
     }
 }
