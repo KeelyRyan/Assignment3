@@ -17,6 +17,34 @@
 
     <div class="container">
       <!--Cookie Warning -->
+      <script type="text/javascript">
+      function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
+
+      function checkCookie() {
+          var user=getCookie("username");
+          if (user != "") {
+              alert("Welcome again " + user);
+          } else {
+             user = prompt("Please enter your name:","");
+             if (user != "" && user != null) {
+                 setCookie("username", user, 30);
+             }
+          }
+      }
+      </script>
     <div class="alert alert-info alert-dismissable" id="cookie">
       <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
       <strong>Cookie Consent</strong> This site contains cookies, by continuing you are consenting to the use of cookies.
@@ -237,5 +265,5 @@
         </div>
 
         <script type="text/javascript" src="scripts.js"></script>
-      </body>
+      </body onload="checkCookie()">
     </html>
