@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IMMA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Sumana" rel="stylesheet">
+  </head>
+  <body onload="check()">
+
+    <div class="container">
+      <!--Navigation-->
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">IMMA.ie</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plan Your Visit<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="hours.html">Opening Hours</a></li>
+                        <li><a href="directions.html">How to Get Here</a></li>
+                        <li class="active"><a href="#">Tickets</a></li>
+                  </ul>
+                    </li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="about.html">About IMMA</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="guest.html">Guest Book</a></li>
+                    <li><a href="validation.html">Validation</a></li>
+                  </ul>
+                </div>
+                </nav>
+      <!--Navigation end,-->
+      <!--Canvas full name-->
+      <div class='row' id='socialmedia'>
+        <div class="col-md-1 hidden-xs">
+          <canvas id="rectangles"></canvas>
+             <script type="text/javascript">
+                 var canvas=document.getElementById('rectangles');
+                 var ctx=canvas.getContext('2d');
+                 ctx.fillStyle='#6495ED';
+                 ctx.fillRect(35,10,15,15);
+                 ctx.fillStyle='#4169E1';
+                 ctx.fillRect(40,15,15,15);
+                 ctx.fillStyle='#0000CD';
+                 ctx.fillRect(45,20,15,15);
+                 ctx.fillStyle='#191970';
+                 ctx.fillRect(50,25,15,15);
+             </script>
+        </div>
+          <div class="col-md-9">
+            <h4>Irish Museum of Modern Art</h4>
+          </div>
+       <div class="col-md-2">
+         <a href="http://www.facebook.com/IrishMuseumofModernArt"><i class= "fa fa-facebook-square"></i></a>
+         <a href="https://twitter.com/IMMAIreland"><i class="	fa fa-twitter"></i></a>
+       </div>
+       </div>
+       <h3>Ticket Bookings</h3>
+       <div class='row'>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="sel1">Select Event:</label>
+            <select class="form-control" id="sel1">
+              <option>Event 1</option>
+              <option>Event 2</option>
+              <option>Event 3</option>
+              <option>Event 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          Select ticket type(s):
+          <div class="checkbox">
+  <label><input type="checkbox" value="">Adult</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="">Child</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="" disabled>Student/OAP</label>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class="col-md-6">
+       <div class="form-group">
+         <label for="usr">Name:</label>
+         <input type="text" class="form-control" id="usr">
+       </div>
+     </div>
+       <div class="col-md-6">
+              <div class="form-group">
+         <label for="address">Address:</label>
+         <input type="address" class="form-control" id="address">
+       </div>
+     </div>
+   </div>
+       <div class='row'>
+       <div class="col-md-6">
+         <div class="form-group">
+           <label for="Phone">Phone:</label>
+           <input type="Phone" class="form-control" id="Phone">
+         </div>
+</div>
+<div class="col-md-6">
+       <div class="form-group">
+  <label for="Line2">Address line 2:</label>
+  <input type="Line2" class="form-control" id="Line2">
+</div>
+</div>
+</div>
+<div class='row'>
+<div class="col-md-6">
+<div class="form-group">
+  <label for="e-mail">e-mail:</label>
+  <input type="e-mail" class="form-control" id="e-mail">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+  <label for="City/Town">City/Town:</label>
+  <input type="City/Town" class="form-control" id="City/Town">
+</div>
+</div>
+</div>
+<div class='row'>
+<div class="col-md-6">
+</div>
+  <div class="col-md-6">
+<div class="form-group">
+  <label for="county">county:</label>
+  <input type="county" class="form-control" id="countyr">
+</div>
+</div>
+</div>
+
+
+
+<button type="button" class="btn btn-primary active">Continue</button>
+
+
+       <div class='row'>
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Plan Your Visit</a></li>
+                   <li><a href="#">Tickets</a></li>
+                  </ol>
+                </div>
+              </div>
+           <footer style= "background-color:#6495ED" id='footer'>
+           <p>Irish Museum of Modern Art, Royal Hospital, Kilmainham, Dublin 8, D08 FW31, Ireland
+            Tel: +353-1-6129900, Email: info@imma.ie</p>&copy; k00223358
+           </footer>
+               </div>
+
+
+       <script type="text/javascript" src="scripts.js"></script>
+             </body>
+           </html>
